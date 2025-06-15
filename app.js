@@ -25,7 +25,7 @@ const server= http.createServer((req,res)=>{
                 item = item.replaceAll("{{%IMAGE%}}", anime.images.jpg.image_url)
                 item = item.replaceAll("{{%NAME%}}", anime.name)
                 item = item.replaceAll("{{%NICKNAMES%}}", anime.name)
-                item = item.replaceAll("{{%ABOUT%}}", anime.about.slice(0,150))
+                item = item.replaceAll("{{%ABOUT%}}", anime.about.slice(0,400))
                 return item
             }).join("");
             res.end(`<section style="display:flex;flex-direction:column;align-items:center">${html}</section>`);
