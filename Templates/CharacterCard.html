@@ -1,0 +1,46 @@
+<article style="
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(40, 48, 72, 0.85);
+  backdrop-filter: blur(10px);
+  color: #f0f0f0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+">
+  <img 
+    src="{{%IMAGE%}}" 
+    alt="{{%NAME%}}" 
+    style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px;"
+  >
+  <h3 style="margin: 12px 0 4px; font-size: 1.2rem;">{{%NAME%}}</h3>
+  <p style="font-size: 0.9rem; color: #bbb; margin-bottom: 12px;">
+    Nicknames: <em>{{%NICKNAMES%}}</em>
+  </p>
+  <a 
+    href="/?id={{%ID%}}"
+    style="
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #ff6bcb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    "
+    onmouseover="this.style.backgroundColor='#ff4bb4'"
+    onmouseout="this.style.backgroundColor='#ff6bcb'"
+  >
+    View More
+  </a>
+</article>
+
+
