@@ -42,6 +42,9 @@ const server= http.createServer((req,res)=>{
     }
 })
 
-server.listen(8000,"127.0.0.1",()=>{
-    console.log("server has started on link 127.0.0.1:8000")
-})
+
+const PORT = process.env.PORT || 8000;
+
+server.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
